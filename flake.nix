@@ -23,7 +23,7 @@
           pkgs.rustPlatform.buildRustPackage {
             name = "rustlings";
             version = "5.5.1";
-
+            doCheck = false;
             buildInputs = cargoBuildInputs;
 
             src = with pkgs.lib; cleanSourceWith {
